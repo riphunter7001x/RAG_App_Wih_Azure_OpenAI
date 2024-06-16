@@ -43,13 +43,12 @@ Create a `.env` file in the project root directory and add the following environ
 ```
 ENDPOINT_URL=<your-endpoint-url>
 API_KEY=<your-api-key>
-SECRET_KEY=<your-secret-key>
 ```
 
 ### 5. Run the application
 
 ```bash
-flask run
+python app.py
 ```
 
 Open your web browser and navigate to `http://127.0.0.1:5000/` to use the chatbot.
@@ -95,6 +94,3 @@ The chatbot application architecture is based on the Azure cloud and uses GPT-3.
 
 ![Architecture Diagram](<url-to-your-architecture-diagram>)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
