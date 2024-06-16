@@ -1,5 +1,3 @@
-
-```markdown
 # RAG_App_Wih_Azure_OpenAI
 
 This is a simple chatbot application built using Flask. The chatbot sends user queries to an Azure Machine Learning (ML) endpoint, which leverages GPT-3.5 turbo as the language model, and displays the bot's response.
@@ -100,4 +98,3 @@ The chatbot application architecture is based on the Azure cloud and uses GPT-3.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
