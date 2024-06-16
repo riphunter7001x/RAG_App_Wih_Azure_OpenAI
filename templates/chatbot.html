@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Chatbot</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #chatbot-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            width: 100%;
+        }
+        #chatbot-messages {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .message {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .user-message {
+            align-self: flex-end;
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 10px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background-color: #f1f1f1;
+            border-radius: 10px 10px 10px 0;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .chatbot-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-top: 10px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div id="chatbot-container">
+                    <div class="chatbot-header">
+                        <h1>Chatbot</h1>
+                    </div>
+                    <div id="chatbot-messages">
+                        {% for message in history %}
+                            <div class="message">
+                                <div class="user-message">{{ message.user }}</div>
+                                <div class="bot-message">{{ message.bot }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <form action="/" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="user-input" name="user-input" class="form-control" placeholder="Type your message..." required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
