@@ -12,7 +12,7 @@ This is a simple chatbot application built using Flask. The chatbot sends user q
 
 The chatbot application architecture is based on the Azure cloud and uses GPT-3.5 turbo as the language model. Below is the architecture diagram:
 
-![Architecture Diagram](<url-to-your-architecture-diagram>)
+![Architecture Diagram](https://github.com/riphunter7001x/RAG_App_Wih_Azure_OpenAI/blob/main/images/mode_Architecture.png)
 
 ## Requirements
 
