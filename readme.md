@@ -18,7 +18,7 @@ The chatbot application architecture is based on the Azure cloud and uses GPT-3.
 
 - Python 3.10
 - Flask
-- python-dotenv
+- openai
 
 ## Setup
 
