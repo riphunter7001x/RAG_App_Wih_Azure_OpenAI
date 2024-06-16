@@ -8,6 +8,12 @@ This is a simple chatbot application built using Flask. The chatbot sends user q
 - Display the bot's response
 - Maintain conversation history using Flask sessions
 
+## Architecture
+
+The chatbot application architecture is based on the Azure cloud and uses GPT-3.5 turbo as the language model. Below is the architecture diagram:
+
+![Architecture Diagram](<url-to-your-architecture-diagram>)
+
 ## Requirements
 
 - Python 3.10
@@ -88,9 +94,5 @@ This file lists the required Python packages.
 2. The bot's response will be displayed below the input box.
 3. Previous conversations will be maintained in the session.
 
-## Architecture
 
-The chatbot application architecture is based on the Azure cloud and uses GPT-3.5 turbo as the language model. Below is the architecture diagram:
-
-![Architecture Diagram](<url-to-your-architecture-diagram>)
 
